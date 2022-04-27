@@ -1,8 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page no-js" lang="ru">
 @@include("./includes/head.html", {title: "Главная"})
-<body>
-
+<body class="page__body">
+  <header class="page__header header">
+    <div class="header__wrapper">
+      <nav class="header__nav">
+        <a class="header__logo-link" href="/">
+          @@include("../img/logo/mobile.svg")
+        </a>
+        <button class="header__trigger header__trigger--closed" type="button" aria-label="Открыть меню"><span></span></button>
+        <ul class="header__list">
+          <li><a class="header__link" href="/">главная</a></li>
+          <li><a class="header__link" href="photo.html">фотографии</a></li>
+          <li><a class="header__link" href="form.html">конкурс</a></li>
+          <li><a class="header__link" href="blank.html">html academy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div style="width: 100%; height: 700px;background: red;">12345</div>
   <script src="js/script.min.js"></script>
 </body>
 

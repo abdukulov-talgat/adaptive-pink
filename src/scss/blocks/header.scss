@@ -1,0 +1,225 @@
+$menu-delay: 0.5s;
+
+.header {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(#000000, 0.3);
+
+  .no-js & {
+    position: static;
+  }
+}
+
+.header__wrapper {
+
+}
+
+.header__nav {
+  position: relative;
+}
+
+.header__logo-link {
+  display: block;
+  min-height: 70px;
+  padding: 23px 0;
+  padding-right: 100px;
+  padding-left: 20px;
+  border-bottom: 1px solid transparent;
+  color: #ffffff;
+  transition: all $menu-delay;
+
+  .no-js &,
+  .menu-open & {
+    border-bottom: 1px solid #000000;
+    background-color: $basic;
+  }
+
+  &:hover {
+    color: $special;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
+
+  svg {
+    display: none;
+    max-width: 100%;
+  }
+
+  @media (max-width: $tablet-width - 1) {
+    .header__logo-mobile {
+      display: block;
+    }
+  }
+}
+
+.header__logo-mobile {
+  width: 74px;
+  height: 23px;
+}
+
+.header__trigger {
+  position: absolute;
+  right: 20px;
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    transform: translateY(-50%);
+  }
+
+  .no-js & {
+    display: none;
+  }
+
+  span,
+  span::before,
+  span::after {
+    transition: all $menu-delay;
+  }
+}
+
+.header__trigger--closed {
+  top: 21px;
+
+  span {
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  span::before,
+  span::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    content: "";
+  }
+
+  span::before {
+    top: -10px;
+  }
+
+  span::after {
+    bottom: -10px;
+  }
+  // Hover, Focus
+  &:hover span,
+  &:hover span::before,
+  &:hover span::after,
+  &:focus span,
+  &:focus span::before,
+  &:focus span::after {
+    background-color: $special;
+  }
+
+  //Active
+  &:active span,
+  &:active span::before,
+  &:active span::after {
+    background-color: rgba($special, 0.3);
+  }
+}
+
+.header__trigger--opened {
+  top: 23px;
+
+  span {
+    width: 30px;
+    height: 3px;
+    background-color: transparent;
+  }
+
+  span::before,
+  span::after {
+    position: absolute;
+    left: 3px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    content: "";
+  }
+
+  span::before {
+    transform: rotate(45deg);
+  }
+
+  span::after {
+    transform: rotate(-45deg);
+  }
+
+  //Hover, Focus
+  &:hover span::before,
+  &:hover span::after,
+  &:focus span::before,
+  &:focus span::after {
+    background-color: $special;
+  }
+
+  //Active
+  &:active span::before,
+  &:active span::after {
+    background-color: $special;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header__list {
+  @include reset-list;
+
+  position: absolute;
+  width: 100%;
+  transform: scaleY(0);
+  transform-origin: 50% 0;
+  transition: transform $menu-delay;
+  visibility: hidden;
+
+  .no-js & {
+    position: static;
+    transform: none;
+    visibility: visible;
+  }
+
+  .menu-open & {
+    transform: scaleY(1);
+    visibility: visible;
+  }
+}
+
+.header__link {
+  display: block;
+  padding: 14px 20px 16px;
+  border-top: 1px solid rgba(#000000, 0.15);
+  border-bottom: 1px solid #000000;
+  background-color: $basic;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $special;
+  }
+
+  &:active {
+    color: rgba($special, 0.3);
+  }
+}
