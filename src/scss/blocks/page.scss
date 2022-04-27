@@ -12,6 +12,20 @@
   margin: 0 auto;
 }
 
-.page__header {
+.page__wrapper {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
 
+.page__header {
+  flex-shrink: 0;
+}
+
+.page__main {
+  flex-grow: 1;
+}
+
+.page__footer {
+  flex-shrink: 0;
 }

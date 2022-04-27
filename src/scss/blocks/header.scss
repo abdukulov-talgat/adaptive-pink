@@ -11,11 +11,22 @@ $menu-delay: 0.5s;
 }
 
 .header__wrapper {
+  max-width: $desktop-width;
+  margin: 0 auto;
 
+  @media (min-width: $desktop-width) {
+    padding: 0 20px;
+  }
 }
 
 .header__nav {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
 
 .header__logo-link {
@@ -26,6 +37,7 @@ $menu-delay: 0.5s;
   padding-left: 20px;
   border-bottom: 1px solid transparent;
   color: #ffffff;
+  outline: none;
   transition: all $menu-delay;
 
   .no-js &,
@@ -48,7 +60,7 @@ $menu-delay: 0.5s;
   }
 
   @media (max-width: $tablet-width - 1) {
-    .header__logo-mobile {
+    & .logo-mobile {
       display: block;
     }
   }
@@ -57,24 +69,49 @@ $menu-delay: 0.5s;
     padding-top: 27px;
     padding-bottom: 42px;
 
-    .header__logo-tablet {
+    & .logo-tablet {
       display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 16%;
+    padding-right: 0;
+    padding-left: 0;
+
+    & .logo-tablet {
+      display: none;
+    }
+
+    & .logo-desktop {
+      display: block;
+    }
+
+    &:hover path,
+    &:focus path,
+    &:active path {
+      fill: currentcolor;
     }
   }
 }
 
-.header__logo-mobile {
+.logo-mobile {
   width: 74px;
   height: 23px;
 }
 
-.header__logo-tablet {
+.logo-tablet {
   width: 145px;
   height: 40px;
 
   .header & path {
     fill: currentcolor;
   }
+}
+
+.logo-desktop {
+  width: 147px;
+  height: 40px;
 }
 
 .header__trigger {
@@ -107,6 +144,10 @@ $menu-delay: 0.5s;
 
   @media (min-width: $tablet-width) {
     top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -220,6 +261,21 @@ $menu-delay: 0.5s;
     transform: scaleY(1);
     visibility: visible;
   }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    display: flex;
+    width: 66%;
+    min-height: 110px;
+    flex-wrap: wrap;
+    padding-top: 26px;
+    transform: none;
+    visibility: visible;
+
+    li:not(:last-child) {
+      margin-right: 79px;
+    }
+  }
 }
 
 .header__link {
@@ -232,6 +288,7 @@ $menu-delay: 0.5s;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
+  outline: none;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -243,5 +300,25 @@ $menu-delay: 0.5s;
 
   &:active {
     color: rgba($special, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 19px 0 17px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: capitalize;
+
+
+    &:active {
+      color: rgba(#ffffff, 0.3);
+    }
+
+    &--current {
+      border-bottom-color: #ffffff;
+    }
   }
 }
