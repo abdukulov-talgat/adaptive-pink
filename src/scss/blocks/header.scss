@@ -52,11 +52,29 @@ $menu-delay: 0.5s;
       display: block;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 42px;
+
+    .header__logo-tablet {
+      display: block;
+    }
+  }
 }
 
 .header__logo-mobile {
   width: 74px;
   height: 23px;
+}
+
+.header__logo-tablet {
+  width: 145px;
+  height: 40px;
+
+  .header & path {
+    fill: currentcolor;
+  }
 }
 
 .header__trigger {
@@ -85,6 +103,10 @@ $menu-delay: 0.5s;
   span::before,
   span::after {
     transition: all $menu-delay;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 43px;
   }
 }
 
