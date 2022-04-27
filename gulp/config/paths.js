@@ -20,7 +20,11 @@ const paths = {
             `${srcFolder}/img/**/*.svg`,
             `!${srcFolder}/img/icons/**`
         ],
-        sprite: `${ srcFolder }/img/icons/**/*.svg`,
+        sprite: `${srcFolder}/img/icons/**/*.svg`,
+        favicons: [ // только *.manifest и *.ico которые помещаются в корень проекта, остальные фавиконки в папке img. Т.к. оптимизация
+             `${srcFolder}/favicons/*.webmanifest`,
+             `${srcFolder}/favicons/*.ico`,
+        ],
     },
     build: {
         files: `${buildFolder}/files/`,
