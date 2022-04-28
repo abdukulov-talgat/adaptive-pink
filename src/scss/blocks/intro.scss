@@ -1,27 +1,67 @@
 
 .intro {
+  padding-top: 70px;
+  background: #1d384b url("@img/intro/back-mobile.jpg") 50% 0  no-repeat;
+  // background-color: #1d384b;
   color: #ffffff;
+
+  @media (min-width: $mobile-width + 1) {
+    background: #1d384b url("@img/intro/back-tablet.jpg") 50% 0 / auto 462px no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 110px;
+    background: #1d384b url("@img/intro/back-tablet.jpg") 50% 0  no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: #1d384b url("@img/intro/back-desktop.jpg") 50% 0  no-repeat;
+  }
 }
 
-.intro__header {
-  min-height: 462px;
-  padding-top: 90px;
-  background-image: url("@img/intro/hand-mobile.png"), url("@img/intro/back-mobile.jpg");
-  background-position: 50% 100%, 50% 0;
-  background-repeat: no-repeat;
+.intro__wrapper {
+  padding-top: 20px;
+  padding-bottom: 31px;
+  background: url("@img/intro/hand-mobile.png") 50% 106px no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 114px;
+    background: url("@img/intro/hand-tablet.png") 50% 74px no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 125px;
+    background: url("@img/intro/hand-desktop.png") 36px 98px no-repeat;
+  }
+}
+
+.intro__container {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .intro__title {
   display: block;
+  margin-bottom: 342px;
   font-size: 24px;
   font-weight: 300;
   line-height: 120%;
   text-align: center;
-}
 
-.intro__download {
-  padding: 28px 0 31px;
-  background-color: #1d2631;
+  @media (min-width: $tablet-width) {
+    margin-top: 74px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 79px;
+    margin-bottom: 36px;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .intro__button {
@@ -36,7 +76,7 @@
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 1em;
   outline: none;
   text-align: center;
   text-decoration: none;
@@ -53,6 +93,16 @@
     box-shadow: none;
     color: rgba($special, 0.3);
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14.5px;
+    margin-bottom: 65px;
+    font-size: 21px;
+  }
 }
 
 .intro__list {
@@ -63,6 +113,14 @@
   margin-bottom: 19px;
   gap: 30px;
   grid-template-columns: repeat(3, min-content);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .intro__icon {
@@ -73,21 +131,50 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 47px 56px;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.5s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.25);
+  }
+
+  &:active {
+    opacity: 0.5;
+    transform: scale(1);
+  }
 }
 
 .intro__icon--android {
   background-image: url("@img/icons/icons.svg#android-logo");
   background-size: 43px 47px;
+
+  @media (min-width: $desktop-width) {
+    background-position: center 10px;
+  }
 }
 
 .intro__icon--windows {
   background-image: url("@img/icons/icons.svg#microsoft-logo");
   background-position: center 14px;
   background-size: 44px 41px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 1px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: center 14px;
+  }
 }
 
 .intro__text {
   margin: 0;
   font-weight: 300;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
