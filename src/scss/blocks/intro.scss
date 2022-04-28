@@ -1,0 +1,93 @@
+
+.intro {
+  color: #ffffff;
+}
+
+.intro__header {
+  min-height: 462px;
+  padding-top: 90px;
+  background-image: url("@img/intro/hand-mobile.png"), url("@img/intro/back-mobile.jpg");
+  background-position: 50% 100%, 50% 0;
+  background-repeat: no-repeat;
+}
+
+.intro__title {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+}
+
+.intro__download {
+  padding: 28px 0 31px;
+  background-color: #1d2631;
+}
+
+.intro__button {
+  display: block;
+  width: 100%;
+  padding: 15px 15px 16px;
+  border: 3px solid #ffffff;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border-radius: 29px;
+  color: inherit;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    box-shadow: 0 5px 7px rgba(1, 1, 1, 0.75);
+    color: $special;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    box-shadow: none;
+    color: rgba($special, 0.3);
+  }
+}
+
+.intro__list {
+  @include reset-list;
+
+  display: grid;
+  justify-content: center;
+  margin-bottom: 19px;
+  gap: 30px;
+  grid-template-columns: repeat(3, min-content);
+}
+
+.intro__icon {
+  display: block;
+  width: 50px;
+  height: 60px;
+  background-image: url("@img/icons/icons.svg#apple-logo");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 47px 56px;
+}
+
+.intro__icon--android {
+  background-image: url("@img/icons/icons.svg#android-logo");
+  background-size: 43px 47px;
+}
+
+.intro__icon--windows {
+  background-image: url("@img/icons/icons.svg#microsoft-logo");
+  background-position: center 14px;
+  background-size: 44px 41px;
+}
+
+.intro__text {
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+}
