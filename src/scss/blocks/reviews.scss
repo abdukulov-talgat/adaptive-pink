@@ -136,9 +136,13 @@
   position: absolute;
   top: 29px;
   left: 0%;
-  display: flex;
+  display: none;
   width: 100%;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .reviews__arrow {

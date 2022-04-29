@@ -18,7 +18,7 @@ $menu-delay: 0.5s;
 }
 
 .header__wrapper {
-  max-width: $desktop-width;
+  max-width: 980px;
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
