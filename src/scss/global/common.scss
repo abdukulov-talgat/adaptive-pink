@@ -21,6 +21,15 @@ body {
   line-height: 24px;
 }
 
+
+.mobile-only {
+  display: none;
+
+  @media (max-width: 320px) {
+    display: block;
+  }
+}
+
 .desktop-only {
   display: none;
 
@@ -28,3 +37,4 @@ body {
     display: block;
   }
 }
+
