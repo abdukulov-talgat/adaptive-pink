@@ -40,9 +40,9 @@ $menu-delay: 0.5s;
   display: block;
   min-height: 70px;
   padding: 23px 0;
+  padding-right: 100px;
   padding-left: 20px;
   border-bottom: 1px solid transparent;
-  margin-right: 56%;
   color: #ffffff;
   outline: none;
   transition: all $menu-delay;
@@ -84,8 +84,8 @@ $menu-delay: 0.5s;
 
   @media (min-width: $desktop-width) {
     max-width: 16%;
+    padding-right: 0;
     padding-left: 0;
-    margin-right: 0;
 
     .no-js & {
       background-color: transparent;
@@ -154,10 +154,6 @@ $menu-delay: 0.5s;
     transition: all $menu-delay;
   }
 
-  @media (min-width: $tablet-width) {
-    top: 43px;
-  }
-
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -165,6 +161,10 @@ $menu-delay: 0.5s;
 
 .header__trigger--closed {
   top: 21px;
+
+  @media (min-width: $tablet-width) {
+    top: 43px;
+  }
 
   span {
     width: 100%;
@@ -209,6 +209,10 @@ $menu-delay: 0.5s;
 
 .header__trigger--opened {
   top: 23px;
+
+  @media (min-width: $tablet-width) {
+    top: 43px;
+  }
 
   span {
     width: 30px;

@@ -14,24 +14,17 @@ body {
   min-width: $mobile-width;
   height: 100%;
   margin: 0;
+  color: $basic;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-
-  // background-color: $special-light;
-  // color: $basic-dark;
-  // font-family: "Inter", sans-serif;
-  // font-size: 16px;
-  // font-weight: 400;
-  // line-height: 22px;
 }
 
+.desktop-only {
+  display: none;
 
-// .wrapper {
-//   display: flex;
-//   width: 1170px;
-//   min-height: 100%;
-//   flex-direction: column;
-//   margin: 0 auto;
-// }
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

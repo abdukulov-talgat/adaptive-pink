@@ -1,6 +1,8 @@
 
 .intro {
   padding-top: 70px;
+
+  margin-bottom: 41px;
   background: #1d384b url("@img/intro/back-mobile.jpg") 50% 0  no-repeat;
   // background-color: #1d384b;
   color: #ffffff;
@@ -11,10 +13,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 110px;
+    margin-bottom: 46px;
     background: #1d384b url("@img/intro/back-tablet.jpg") 50% 0  no-repeat;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 62px;
     background: #1d384b url("@img/intro/back-desktop.jpg") 50% 0  no-repeat;
   }
 }
@@ -160,7 +164,8 @@
   background-position: center 14px;
   background-size: 44px 41px;
 
-  @media (min-width: $tablet-width) {
+
+  @media (min-width: $mobile-width + 1) {
     background-position: 1px 10px;
   }
 
