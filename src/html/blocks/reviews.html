@@ -1,21 +1,61 @@
-<section class="reviews page__center swiper">
+<section class="reviews page__center">
   <h2 class="visually-hidden">Отзывы</h2>
   <!-- Additional required wrapper -->
-  <ul class="reviews__list swiper-wrapper">
-    <!-- Slides -->
-    <li class="reviews__item swiper-slide">
-      <blockquote class="reviews__text">
-        <div>
-          <cite class="reviews__author"></cite>
-          <b></b>
+  <div class="reviews__swiper swiper">
+    <ul class="reviews__list swiper-wrapper">
+      <!-- Slides -->
+      <li class="reviews__item swiper-slide">
+        <div class="reviews__container">
+          <blockquote class="reviews__quote">
+            <div class="reviews__box">
+              <cite class="reviews__author">Николай Петров</cite>
+              <b class="reviews__about">25 лет, водитель трамвая</b>
+            </div>
+            <p class="reviews__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              <br class="mobile-only">фотографии!»
+            </p>
+          </blockquote>
         </div>
-      </blockquote>
-    </li>
-  </ul>
-  <!-- If we need pagination -->
-  <!-- <div class="reviews__pagination swiper-pagination"></div> -->
-
-  <!-- If we need navigation buttons -->
-  <!-- <button class="swiper-button-prev" type="button"></button>
-  <button class="swiper-button-next" type="button"></button> -->
+      </li>
+      <li class="reviews__item swiper-slide">
+        <div class="reviews__container">
+          <blockquote class="reviews__quote">
+            <div class="reviews__box">
+              <cite class="reviews__author">Василий Пупкин II</cite>
+              <b class="reviews__about">25 лет, водитель трамвая</b>
+            </div>
+            <p class="reviews__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии! Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!»
+            </p>
+          </blockquote>
+        </div>
+      </li>
+      <li class="reviews__item swiper-slide">
+        <div class="reviews__container">
+          <blockquote class="reviews__quote">
+            <div class="reviews__box">
+              <cite class="reviews__author">ОЧЕНЬ ДЛИННОЕ ИМЯ АВТОРА!!! НУ ОЧЕНЬ</cite>
+              <b class="reviews__about">25 лет, водитель трамвая</b>
+            </div>
+            <p class="reviews__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!» «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!» «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!»
+            </p>
+          </blockquote>
+        </div>
+      </li>
+    </ul>
+    <!-- If we need pagination -->
+    <div class="reviews__pagination swiper-pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="review__arrows">
+      <button class="reviews__arrow reviews__arrow--prev" type="button"></button>
+      <button class="reviews__arrow  reviews__arrow--next" type="button"></button>
+    </div>
+  </div>
 </section>

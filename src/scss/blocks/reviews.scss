@@ -1,18 +1,169 @@
 .reviews {
+  padding-top: 41px;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 184px;
+
+    background: url("@img/icons/icons.svg#quotes") no-repeat   center 72px / 79px 63px;
+  }
+}
+
+.reviews__swiper {
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .reviews__list {
-}
-
-.swiper-wrapper {
+  @include reset-list;
+  margin-bottom: 31px;
 }
 
 .reviews__item {
+  line-height: 30px;
+  text-align: center;
 }
 
-.swiper-slide {
+.reviews__container {
+  @media (min-width: $desktop-width) {
+    width: 73.19%;
+    margin: 0 auto;
+  }
+}
+
+.reviews__quote {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+
+  }
+}
+
+.reviews__box {
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-bottom: 5px;
+  }
+}
+
+.reviews__author {
+  display: block;
+  color: #000000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 3px;
+    font-size: 24px;
+  }
+}
+
+.reviews__about {
+  display: none;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.reviews__text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
 }
 
 .reviews__pagination {
+  display: grid;
+  justify-content: center;
+  gap: 13px;
+  grid-template-columns: repeat(auto-fit, 12px);
 }
 
+.reviews__bullet {
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  background-color: rgba($basic, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($basic, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($basic, 0.1);
+  }
+
+  &--current {
+    border: 3px solid $basic;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.review__arrows {
+  position: absolute;
+  top: 29px;
+  left: 0%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.reviews__arrow {
+  z-index: 10;
+  width: 22px;
+  height: 41px;
+  padding: 0;
+  border: 0;
+  background: transparent url("@img/icons/icons.svg#arrow") no-repeat center / 22px 41px;
+  cursor: pointer;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.reviews__arrow--prev {
+
+}
+
+.reviews__arrow--next {
+  transform: rotate(180deg);
+}
