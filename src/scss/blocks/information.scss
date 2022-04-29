@@ -98,6 +98,7 @@
     display: grid;
     width: auto;
     padding-top: 6px;
+    padding-bottom: 0;
     margin: auto;
     gap: 20px;
     grid-template-columns: repeat(3, 300px);
@@ -114,6 +115,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
