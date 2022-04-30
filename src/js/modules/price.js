@@ -17,6 +17,7 @@ function initSlider() {
         },
         // loop: true,
         initialSlide: 1,
+        slidesPerView: 'auto',
     });
 }
 
