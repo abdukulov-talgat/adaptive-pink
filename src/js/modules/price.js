@@ -3,25 +3,20 @@ import Swiper, { Pagination, Navigation, Keyboard } from 'swiper';
 import 'swiper/css';
 
 function initSlider() {
-    const swiper = new Swiper('.reviews__swiper', {
-        modules: [Pagination, Navigation, Keyboard],
+    const swiper = new Swiper('.price__swiper', {
+        modules: [Pagination, ],
         keyboard: {
             enabled: true,
-            onlyInViewport: true,
+            // onlyInViewport: true,
         },
         pagination: {
-            el: ".reviews__pagination",
+            el: ".price__pagination",
             bulletClass: "pagination__bullet",
             bulletActiveClass: "pagination__bullet--current",
             clickable: true,
         },
-        navigation: {
-            nextEl: ".reviews__arrow--next",
-            prevEl: ".reviews__arrow--prev",
-
-        },
-        autoHeight: true,
-        loop: true,
+        // loop: true,
+        initialSlide: 1,
     });
 }
 
