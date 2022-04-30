@@ -10,7 +10,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <title>Главная</title>
 </head>
-<body class="page__body">
+<body>
   <div class="page__wrapper">
     <header class="page__header header">
   <div class="header__wrapper">
@@ -92,8 +92,8 @@
         <li class="information__item">
           <div class="information__box">
             <picture>
-              <source srcset="img/information/phone-1.webp 1x, img/information/phone-1@2x.webp 2x">
-              <img class="information__img" src="img/information/phone-1.png" width="186" height="382" srcset="img/information/phone-1@2x.png 2x">
+              <source type="image/webp" srcset="img/information/phone-1.webp 1x, img/information/phone-1@2x.webp 2x">
+              <img class="information__img" src="img/information/phone-1.png" width="186" height="382" srcset="img/information/phone-1@2x.png 2x" alt="До приложения">
             </picture>
           </div>
           <h3 class="information__caption">Поднимает настроение</h3>
@@ -102,8 +102,8 @@
         <li class="information__item">
           <div class="information__box">
             <picture>
-              <source srcset="img/information/phone-2.webp 1x, img/information/phone-2@2x.webp 2x">
-              <img class="information__img" src="img/information/phone-2.png" width="186" height="382" srcset="img/information/phone-2@2x.png 2x">
+              <source type="image/webp" srcset="img/information/phone-2.webp 1x, img/information/phone-2@2x.webp 2x">
+              <img class="information__img" src="img/information/phone-2.png" width="186" height="382" srcset="img/information/phone-2@2x.png 2x" alt="Использование приложения">
             </picture>
           </div>
           <h3 class="information__caption">Меняет мир вокруг</h3>
@@ -112,8 +112,9 @@
         <li class="information__item">
           <div class="information__box">
             <picture>
-              <source srcset="img/information/phone-3.webp 1x, img/information/phone-3@2x.webp 2x">
-              <img class="information__img" src="img/information/phone-3.png" width="186" height="382" srcset="img/information/phone-3@2x.png 2x">
+              <source type="image/webp" srcset="img/information/phone-3.webp 1x, img/information/phone-3@2x.webp 2x">
+              <img class="information__img" src="img/information/phone-3.png" width="186" height="382" srcset="img/information/phone-3@2x.png 2x"
+                alt="После использования приложения">
             </picture>
           </div>
           <h3 class="information__caption">Заводит <br class="desktop-only">новых друзей</h3>
@@ -135,6 +136,138 @@
       <a class="research__link" href="#">Узнать больше об исследовании</a>
     </div>
   </div>
+</section>
+      <section class="reviews page__center">
+  <h2 class="visually-hidden">Отзывы</h2>
+  <!-- Additional required wrapper -->
+  <div class="reviews__swiper swiper">
+    <ul class="reviews__list swiper-wrapper">
+      <!-- Slides -->
+      <li class="reviews__item swiper-slide">
+        <div class="reviews__container">
+          <blockquote class="reviews__quote">
+            <div class="reviews__box">
+              <cite class="reviews__author">Николай Петров</cite>
+              <b class="reviews__about">25 лет, водитель трамвая</b>
+            </div>
+            <p class="reviews__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              <br class="mobile-only">фотографии!»
+            </p>
+          </blockquote>
+        </div>
+      </li>
+      <li class="reviews__item swiper-slide">
+        <div class="reviews__container">
+          <blockquote class="reviews__quote">
+            <div class="reviews__box">
+              <cite class="reviews__author">Василий Пупкин II</cite>
+              <b class="reviews__about">25 лет, водитель трамвая</b>
+            </div>
+            <p class="reviews__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии! Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!»
+            </p>
+          </blockquote>
+        </div>
+      </li>
+      <li class="reviews__item swiper-slide">
+        <div class="reviews__container">
+          <blockquote class="reviews__quote">
+            <div class="reviews__box">
+              <cite class="reviews__author">ОЧЕНЬ ДЛИННОЕ ИМЯ АВТОРА!!! НУ ОЧЕНЬ</cite>
+              <b class="reviews__about">25 лет, водитель трамвая</b>
+            </div>
+            <p class="reviews__text">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!» «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!» «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+              фотографии!»
+            </p>
+          </blockquote>
+        </div>
+      </li>
+    </ul>
+    <!-- If we need pagination -->
+    <div class="reviews__pagination pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="review__arrows">
+      <button class="reviews__arrow reviews__arrow--prev" type="button"></button>
+      <button class="reviews__arrow  reviews__arrow--next" type="button"></button>
+    </div>
+  </div>
+</section>
+      <section class="price">
+  <h2 class="visually-hidden">Тарифы</h2>
+  <div class="page__center price__wrapper">
+    <div class="price__swiper swiper">
+      <div class="swiper-wrapper">
+
+        <div class="price__column price__column--table-only">
+          <span>Розовый фильтр</span>
+          <span>Смайлики</span>
+          <span>Комментарии</span>
+        </div>
+
+        <div class="price__column swiper-slide">
+          <div class="price__title">
+            <span class="price__name">База</span>
+            <span class="price__money">1,99 USD</span>
+          </div>
+          <div class="price__check"><span>Розовый фильтр</span></div>
+          <div class="price__check price__check--no"><span>Смайлики</span></div>
+          <div class="price__check price__check--no"><span>Комментарии</span></div>
+        </div>
+
+        <div class="price__column swiper-slide">
+          <div class="price__title price__title--hit">
+            <span class="price__name">Стандарт</span>
+            <span class="price__money">3,99 USD</span>
+          </div>
+          <div class="price__check"><span>Розовый фильтр</span></div>
+          <div class="price__check"><span>Смайлики</span></div>
+          <div class="price__check price__check--no"><span>Комментарии</span></div>
+        </div>
+        <div class="price__column swiper-slide">
+          <div class="price__title">
+            <span class="price__name">Анлим</span>
+            <span class="price__money">9,99 USD</span>
+          </div>
+          <div class="price__check"><span>Розовый фильтр</span></div>
+          <div class="price__check"><span>Смайлики</span></div>
+          <div class="price__check"><span>Комментарии</span></div>
+        </div>
+      </div>
+      <div class="price__pagination pagination"></div>
+    </div>
+  </div>
+</section>
+      <section class="contacts">
+  <div class="page__center">
+    <h2 class="contacts__title">
+      Остались вопросы?<br>
+      Свяжитесь с нами!
+    </h2>
+    <div class="contacts__wrapper">
+      <div class="contacts__group">
+        <span class="contacts__caption">Звоните:</span>
+        <a class="contacts__address" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      </div>
+      <div class="contacts__group contacts__group--last">
+        <span class="contacts__caption">Пишите:</span>
+        <a class="contacts__address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div class="contacts__group">
+        <span class="contacts__caption">Приезжайте в гости:</span>
+        <address class="contacts__address">
+          ул. Большая<br>
+          Конюшенная, 19/8
+        </address>
+      </div>
+    </div>
+  </div>
+  <div class="contacts__container"><div class="contacts__map"></div></div>
 </section>
     </main>
     <footer class="page__footer footer">
