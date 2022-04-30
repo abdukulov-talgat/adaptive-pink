@@ -12,7 +12,7 @@ export default function map() {
     loader.load().then(() => {
         map = new google.maps.Map(document.querySelector('.contacts__map'), {
             center: location,
-            zoom: 18,
+            zoom: 16,
             disableDefaultUI: true,
             // mapTypeControl: false,
         });
