@@ -52,6 +52,7 @@
     "not dead"
   ],
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.14.1",
     "swiper": "^8.1.1"
   }
 }
