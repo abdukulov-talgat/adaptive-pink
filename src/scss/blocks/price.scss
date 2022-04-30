@@ -56,10 +56,6 @@ div.price__swiper {
   width: 100%;
   box-sizing: border-box;
 
-  @media (min-width: $tablet-width) {
-
-  }
-
   & > *:last-child {
     border-bottom-width: 2px;
   }
