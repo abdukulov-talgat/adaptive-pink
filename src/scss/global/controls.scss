@@ -1,14 +1,14 @@
 .control-input {
   align-items: center;
   padding: 14px 20px 15px;
-  border: 2px solid #e5e5e5;
-  border-radius: 1px;
+  border: 0;
+  border-radius: 3px;
   color: #283645;
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  outline: none;
+  outline: 2px solid #e5e5e5;
 
   &::placeholder {
     color: $basic;
@@ -20,18 +20,17 @@
 
   &:hover,
   &:focus {
-    border-color: $basic;
+    outline-color: $basic;
   }
 
   &:active {
-    border-color: $special;
+    outline-color: $special;
   }
 }
 
 .control-checkbox {
   display: flex;
   align-items: center;
-  border-radius: 1px;
   color: #283645;
   font-family: inherit;
   font-size: 18px;
@@ -40,25 +39,28 @@
 
   input:checked + &__mark {
     background-image: url("@img/icons/icons.svg#check-on");
-    background-position: center;
+    background-position: center 9px;
     background-repeat: no-repeat;
     background-size: 22px 16px;
   }
 
   &__mark {
-    width: 39px;
-    height: 39px;
-    border: 2px solid #e5e5e5;
-    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    margin-right: 22px;
+    background-color: #ffffff;
+    border-radius: 1px;
     cursor: pointer;
+    outline: 2px solid #e5e5e5;
+    outline-offset: 0;
 
     &:hover,
     &:focus {
-      border-color: $basic;
+      outline-color: $basic;
     }
 
     &:active {
-      border-color: $special;
+      outline-color: $special;
     }
   }
 }
@@ -67,7 +69,6 @@
 .control-radio {
   display: flex;
   align-items: center;
-  border-radius: 1px;
   color: #283645;
   font-family: inherit;
   font-size: 18px;
@@ -89,20 +90,22 @@
 
   &__mark {
     position: relative;
-    width: 41px;
-    height: 41px;
-    border: 2px solid #e5e5e5;
-    margin-right: 20px;
+    width: 37px;
+    height: 37px;
+    margin-right: 22px;
+    background-color: #ffffff;
     border-radius: 50%;
     cursor: pointer;
+    outline: 2px solid #e5e5e5;
+    outline-offset: 0;
 
     &:hover,
     &:focus {
-      border-color: $basic;
+      outline-color: $basic;
     }
 
     &:active {
-      border-color: $special;
+      outline-color: $special;
     }
   }
 }

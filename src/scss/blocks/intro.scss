@@ -13,6 +13,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 440px;
     padding-top: 110px;
     margin-bottom: 46px;
     background: #1d384b url("@img/intro/back-tablet.jpg") 50% 0  no-repeat;
@@ -26,6 +27,10 @@
 
 .intro--inner {
   margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 91px;
+  }
 }
 
 
@@ -78,6 +83,12 @@
     padding-top: 24px;
     margin-bottom: 0;
     line-height: 33px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 43px;
+      font-size: 50px;
+      line-height: 68px;
+    }
   }
 }
 

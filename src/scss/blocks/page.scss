@@ -25,4 +25,10 @@
 .page__description {
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
 }
