@@ -12,11 +12,6 @@
   }
 }
 
-.reviews__swiper {
-  @media (min-width: $desktop-width) {
-
-  }
-}
 
 .reviews__list {
   @include reset-list;
@@ -39,10 +34,6 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-
-  }
 }
 
 .reviews__box {
@@ -129,10 +120,6 @@
   &:active {
     opacity: 0.1;
   }
-}
-
-.reviews__arrow--prev {
-
 }
 
 .reviews__arrow--next {
