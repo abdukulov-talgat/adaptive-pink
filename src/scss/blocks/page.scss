@@ -31,4 +31,12 @@
     margin: 0 auto;
     font-size: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 756px;
+
+    .tablet-only {
+      display: inline;
+    }
+  }
 }

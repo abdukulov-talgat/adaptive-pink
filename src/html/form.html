@@ -5,7 +5,7 @@
   <div class="page__wrapper">
     @@include("./includes/header.html")
     <main class="page__main">
-      @@include("./blocks/intro-inner.html", {"title": "Конкурс на самое<br>безбашенное<br>путешествие с Пинк"})
+      @@include("./blocks/intro-inner.html", {"title": "Конкурс на самое безбашенное путешествие с Пинк"})
       <div class="page__center">
         <div class="page__description">
           Поделитесь своей историей и получите
@@ -36,8 +36,8 @@
             </label>
           </p>
         </fieldset>
-        <div class="form__bg form__tall">
-          <fieldset class="form__fieldset">
+        <div class="form__bg form__tall form__order-4 form__wide">
+          <fieldset class="form__fieldset form__fieldset--grid">
             <legend class="form__legend">Ваши безбашенные<br class="before-tablet">достижения в путешествии</legend>
             <label class="form__checkbox control-checkbox">
               <input class="visually-hidden" type="checkbox" name="selfie-shark" checked>
@@ -71,20 +71,16 @@
             </label>
           </fieldset>
         </div>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__order-3 form__fieldset--wide">
           <legend class="form__legend tablet-only">контактная информация</legend>
-          <p class="form__group">
-            <label class="form__label">
+            <label class="form__label form__label--icon">
               <span class="form__label-text">Номер телефона:</span>
               <input class="form__input control-input" type="tel" name="phone" placeholder="Номер, пожалуйста" required>
             </label>
-          </p>
-          <p class="form__group">
-            <label class="form__label">
+            <label class="form__label form__label--icon form__label--email">
               <span class="form__label-text">Адрес почты:</span>
-              <input class="form__input control-input" type="text" name="nanme" placeholder="Введите почту *" required>
+              <input class="form__input control-input" type="email" name="nanme" placeholder="Введите почту *" required>
             </label>
-          </p>
         </fieldset>
         <div class="form__bg form__tall">
           <fieldset class="form__fieldset">
@@ -106,23 +102,18 @@
             </label>
           </fieldset>
         </div>
-        <div class="form__tall">
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Опишите свои эмоции</legend>
-          <textarea class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fieldset>
-      </div>
-      <div class="form__box">
-        <button class="form__submit button" type="submit">Отправить форму</button>
-        <div class="form__hint"><span class="form__hint-star">*</span> — обязательные поля</div>
-      </div>
-        <!--
-        <div class="page__center form__order-end">
-
+        <div class="form__tall form__order-last form__wide">
+          <fieldset class="form__fieldset form__fieldset--wide">
+            <legend class="form__legend">Опишите свои эмоции</legend>
+            <div class="form__container">
+              <textarea class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+          </fieldset>
         </div>
-        <div class="page__center form__order-end">
-
-        </div> -->
+        <div class="form__box form__order-last">
+          <button class="form__submit button" type="submit">Отправить форму</button>
+          <div class="form__hint"><span class="form__hint-star">*</span> — обязательные поля</div>
+        </div>
       </form>
 
     </main>

@@ -20,6 +20,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 394px;
     margin-bottom: 62px;
     background: #1d384b url("@img/intro/back-desktop.jpg") 50% 0  no-repeat;
   }
@@ -86,6 +87,12 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 43px;
+      font-size: 50px;
+      line-height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 35px;
       font-size: 50px;
       line-height: 68px;
     }
