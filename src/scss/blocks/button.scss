@@ -1,0 +1,32 @@
+.button {
+  display: inline-block;
+  padding: 16px 16px 17px;
+  border: 0;
+  background-color: #2aab6d;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: rgba(#ffffff, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
+    cursor: default;
+  }
+}

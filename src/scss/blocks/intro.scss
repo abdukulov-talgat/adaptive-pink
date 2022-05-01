@@ -1,5 +1,6 @@
 
 .intro {
+  min-height: 237px;
   padding-top: 70px;
 
   margin-bottom: 41px;
@@ -22,6 +23,11 @@
     background: #1d384b url("@img/intro/back-desktop.jpg") 50% 0  no-repeat;
   }
 }
+
+.intro--inner {
+  margin-bottom: 44px;
+}
+
 
 .intro__wrapper {
   padding-top: 20px;
@@ -47,6 +53,7 @@
 
 .intro__title {
   display: block;
+  margin: 0;
   margin-bottom: 342px;
   font-size: 24px;
   font-weight: 300;
@@ -66,7 +73,14 @@
     font-size: 50px;
     line-height: 68px;
   }
+
+  &:last-child {
+    padding-top: 24px;
+    margin-bottom: 0;
+    line-height: 33px;
+  }
 }
+
 
 .intro__button {
   display: block;

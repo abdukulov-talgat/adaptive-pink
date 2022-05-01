@@ -2,10 +2,12 @@
 @import "./global/fonts";
 @import "./global/variables";
 @import "./global/mixins";
+@import "./global/controls";
 @import "./global/common";
 
 /* Blocks */
 @import "./blocks/visually-hidden";
+@import "./blocks/button";
 @import "./blocks/social";
 @import "./blocks/pagination";
 @import "./blocks/page";
@@ -17,3 +19,4 @@
 @import "./blocks/reviews";
 @import "./blocks/price";
 @import "./blocks/contacts";
+@import "./blocks/form";

@@ -30,6 +30,22 @@ body {
   }
 }
 
+.before-tablet {
+  display: none;
+
+  @media (max-width: $tablet-width - 1) {
+    display: block;
+  }
+}
+
+.tablet-only {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
 .desktop-only {
   display: none;
 

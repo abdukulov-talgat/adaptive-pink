@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="page no-js" lang="ru">
+@@include("./includes/head.html", {title: "Главная"})
+<body>
+  <div class="page__wrapper">
+    @@include("./includes/header.html")
+    <main class="page__main">
+      @@include("./blocks/intro-inner.html", {"title": "Конкурс на самое<br>безбашенное<br>путешествие с Пинк"})
+      <div class="page__description">
+        <div class="page__center">
+          Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!
+        </div>
+      </div>
+      <form class="form" action="https://htmlacademy.ru" method="post">
+        <div class="page__center">
+          <fieldset class="form__fieldset form__fieldset--borderless">
+            <legend class="visually-hidden">Фамилия Имя Отчество</legend>
+            <p class="form__group">
+              <label class="form__label">
+                <span class="form__label-text">Фамилия:</span>
+                <input class="form__input control-input" type="text" name="surnanme" placeholder="Укажите фамилию *" required>
+              </label>
+            </p>
+            <p class="form__group">
+              <label class="form__label">
+                <span class="form__label-text">Имя:</span>
+                <input class="form__input control-input" type="text" name="nanme" placeholder="Введите ваше имя *" required>
+              </label>
+            </p>
+            <p class="form__group">
+              <label class="form__label">
+                <span class="form__label-text">Отчество:</span>
+                <input class="form__input control-input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+              </label>
+            </p>
+          </fieldset>
+        </div>
+        <div class="form__bg">
+          <div class="page__center">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Ваши безбашенные<br class="before-tablet">достижения в путешествии</legend>
+              <label class="form__checkbox control-checkbox">
+                <input class="visually-hidden" type="checkbox" name="selfie-shark" checked>
+                <span class="control-checkbox__mark"></span>
+                <span>Сделал селфи с акулой</span>
+              </label>
+              <label class="form__checkbox control-checkbox">
+                <input class="visually-hidden" type="checkbox" name="fried-beach" checked>
+                <span class="control-checkbox__mark"></span>
+                <span>Обгорел на пляже</span>
+              </label>
+              <label class="form__checkbox control-checkbox">
+                <input class="visually-hidden" type="checkbox" name="saw-greatest">
+                <span class="control-checkbox__mark"></span>
+                <span>Видел Чака Норриса</span>
+              </label>
+              <label class="form__checkbox control-checkbox">
+                <input class="visually-hidden" type="checkbox" name="souvenir">
+                <span class="control-checkbox__mark"></span>
+                <span>Накупил сувениров</span>
+              </label>
+              <label class="form__checkbox control-checkbox">
+                <input class="visually-hidden" type="checkbox" name="tower" checked>
+                <span class="control-checkbox__mark"></span>
+                <span>Удержал башню</span>
+              </label>
+              <label class="form__checkbox control-checkbox">
+                <input class="visually-hidden" type="checkbox" name="hotel">
+                <span class="control-checkbox__mark"></span>
+                <span>Разгромил отель</span>
+              </label>
+            </fieldset>
+          </div>
+        </div>
+        <div class="page__center">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend tablet-only">контактная информация</legend>
+            <p class="form__group">
+              <label class="form__label">
+                <span class="form__label-text">Номер телефона:</span>
+                <input class="form__input control-input" type="tel" name="phone" placeholder="Номер, пожалуйста" required>
+              </label>
+            </p>
+            <p class="form__group">
+              <label class="form__label">
+                <span class="form__label-text">Адрес почты:</span>
+                <input class="form__input control-input" type="text" name="nanme" placeholder="Введите почту *" required>
+              </label>
+            </p>
+          </fieldset>
+        </div>
+        <div class="form__bg">
+          <div class="page__center">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">С каким приложением путешествовали?</legend>
+              <label class="form__radio control-radio">
+                <input class="visually-hidden" type="radio" name="platform" value="ios" checked>
+                <span class="control-radio__mark"></span>
+                <span>Pink для iOS</span>
+              </label>
+              <label class="form__radio control-radio">
+                <input class="visually-hidden" type="radio" name="platform" value="android" >
+                <span class="control-radio__mark"></span>
+                <span>Pink на Android</span>
+              </label>
+              <label class="form__radio control-radio">
+                <input class="visually-hidden" type="radio" name="platform" value="windows" >
+                <span class="control-radio__mark"></span>
+                <span>Windows Phone</span>
+              </label>
+            </fieldset>
+          </div>
+        </div>
+        <div class="page__center">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Опишите свои эмоции</legend>
+            <textarea class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+        </div>
+        <div class="page__center">
+          <div class="form__box">
+            <button class="form__submit button" type="submit">Отправить форму</button>
+            <div class="form__hint"><span class="form__hint-star">*</span> — обязательные поля</div>
+          </div>
+        </div>
+      </form>
+
+    </main>
+    @@include('./includes/footer.html')
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
