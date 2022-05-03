@@ -40,3 +40,31 @@
     }
   }
 }
+
+.page__cards {
+  margin-top: 20px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.page__filter-bg {
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 41px;
+  margin-top: 43px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    padding-bottom: 54px;
+    margin-top: 68px;
+  }
+}

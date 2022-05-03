@@ -40,8 +40,8 @@
           </div>
         </div>
       </section>
-      <section>
-        <h2 class="visually-hidden">Ваши фотографии</h2>
+      <section class="page__cards">
+        <h2 class="visually-hidden">Фотографии пользователей</h2>
         <div class="page__center">
           <ul class="cards">
             <li class="cards__item">
@@ -177,6 +177,75 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="page__filter">
+        <h2 class="visually-hidden">Загрузить фотографию</h2>
+        <div class="page__center">
+          <div class="page__description">
+            Затмите их всех!<br>
+            Выкладывайте все, что накопилось в телефоне!
+          </div>
+        </div>
+        <div class="page__filter-bg">
+          <div class="page__center">
+            <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+              <input class="visually-hidden" type="file" name="file">
+              <div class="filter__picture">
+                <picture>
+                  <source media="(min-width: 660px)" srcset="@img/photo/cards/photo-7-tablet.jpg 1x, @img/photo/cards/photo-7-tablet@2x.jpg 2x">
+                  <img class="filter__img" src="@img/photo/cards/photo-7-mobile.jpg" srcset="@img/photo/cards/photo-7-mobile@2x.jpg 2x" alt>
+                </picture>
+                <!-- <label class="filter__upload filter__upload--show">
+                  Загрузить фото
+                  <button class="filter__upload-button" type="button" aria-label="Загрузить фото"></button>
+                </label> -->
+              </div>
+              <div class="filter__column">
+                <div class="filter__togglers">
+                  <button class="filter__toggler filter__toggler--current filter__toggler--crop" type="button" aria-label="crop">
+                    <svg width="44" height="44">
+                      <use xlink:href="@img/icons/icons.svg#crop"></use>
+                    </svg>
+                  </button>
+                  <button class="filter__toggler filter__toggler--fill" type="button" aria-label="fill">
+                    <svg width="48" height="43">
+                      <use xlink:href="@img/icons/icons.svg#fill"></use>
+                    </svg>
+                  </button>
+                  <button class="filter__toggler filter__toggler--contrast" type="button" aria-label="contrast">
+                    <svg width="32" height="32">
+                      <use xlink:href="@img/icons/icons.svg#contrast"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="filter__controls">
+                  <div class="control-range control-range--crop filter__range filter__range--current">
+                    <div class="control__bar">
+                      <button class="control__handler" style="margin-left: 83%" type="button"></button>
+                    </div>
+                    <input class="visually-hidden" type="number" name="crop">
+                  </div>
+                  <div class="control-range control-range--fill filter__range">
+                    <div class="control__bar">
+                      <button class="control__handler" style="margin-left: 23%" type="button"></button>
+                    </div>
+                    <input class="visually-hidden" type="number" name="fill">
+                  </div>
+                  <div class="control-range control-range--contrast filter__range">
+                    <div class="control__bar">
+                      <button class="control__handler" style="margin-left: 50%" type="button"></button>
+                    </div>
+                    <input class="visually-hidden" type="number" name="contrast">
+                  </div>
+                </div>
+                <div class="filter__group">
+                  <button class="filter__button button-alt" type="submit">Запостить</button>
+                  <button class="filter__button button-alt button-alt--cancel" type="reset">Отмена</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>

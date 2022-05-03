@@ -1,0 +1,47 @@
+.button-alt {
+  display: inline-block;
+  padding: 15px 15px 16px;
+  border: 3px solid $special;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  color: $special;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: $special;
+    color: #ffffff;
+  }
+
+
+  &:active {
+    background-color: $special;
+    color: rgba(#ffffff, 0.3);
+  }
+}
+
+
+.button-alt--cancel {
+  border-color: $basic;
+  color: $basic;
+  opacity: 0.1;
+
+  &:hover,
+  &:focus {
+    background-color: #f2f2f2;
+    color: $basic;
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $basic;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+}
