@@ -6,6 +6,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
 }
 
 .filter__picture {
@@ -13,7 +17,7 @@
   min-height: 374px;
   align-items: center;
   justify-content: center;
-  background-color: rgba($basic, 0.5);
+  // background-color: rgba($basic, 0.5);
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -21,7 +25,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    // width: 460px;
+    width: 460px;
+    flex-grow: 0;
   }
 }
 
@@ -63,6 +68,12 @@
     flex-direction: column;
     flex-grow: 1;
     margin-left: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    flex-grow: 0;
+    margin-left: 10px;
   }
 }
 
@@ -133,6 +144,10 @@
       content: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .filter__range {
@@ -155,12 +170,21 @@
   @media (min-width: $tablet-width) {
     margin-top: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .filter__button {
   @media (min-width: $tablet-width) {
     margin-right: 13px;
     margin-left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 183px;
+    margin-left: 0;
   }
 }
 
@@ -169,5 +193,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 44px;
+    margin-bottom: 0;
   }
 }
