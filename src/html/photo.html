@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="page no-js" lang="ru">
+@@include("./includes/head.html", {title: "Главная"})
+<body>
+  <div class="page__wrapper">
+    @@include("./includes/header.html")
+    <main class="page__main">
+      @@include("./blocks/intro-inner.html", {"title": "Фотографии<br> пользователей"})
+      <div class="page__center">
+        <div class="page__description">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          <br class="no-tablet">Видите, как не хватает ваших?
+        </div>
+      </div>
+      <section class="panorama">
+        <div class="panorama__wrapper">
+          <h2 class="panorama__title">Панорама дня</h2>
+          <picture>
+            <source media="(min-width: 1000px)" srcset="@img/photo/panorama-desktop.jpg 1x, @img/photo/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="@img/photo/panorama-tablet.jpg 1x, @img/photo/panorama-tablet@2x.jpg 2x">
+            <img class="panorama__img" src="@img/photo/panorama-mobile.jpg" srcset="@img/photo/panorama-mobile@2x.jpg 2x" alt>
+          </picture>
+        </div>
+        <div class="page__center">
+          <div class="panorama__message">
+            <p class="panorama__author">
+              <span class="panorama__name">Анна</span>
+              <time class="panarama__date" datetime="1971-01-01 00:00">(5 минут назад)</time>
+            </p>
+            <p class="panorama__text">
+              Прыгать или нет? Напишите в
+              комментарии свой совет и
+              смотрите прямую трансляцию в
+              перископе, задавайте свои вопросы!
+            </p>
+            <p class="panorama__likes">
+              <button class="panorama__heart" type="button" aria-label="Поставить лайк"></button>
+              <span class="panorama__count">Нравится: 215</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('./includes/footer.html')
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+.panorama {
+  margin-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 89px;
+  }
+}
+
+.panorama__wrapper {
+  position: relative;
+}
+
+.panorama__title {
+  position: absolute;
+  top: 0;
+  right: 6.25%;
+  min-width: 140px;
+  padding: 5px 5px 7px;
+  margin: 0;
+  background-color: $special;
+  color: #ffffff;
+  content: "Панорама дня";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+    right: 3.03%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+    right: 10.83%;
+  }
+}
+
+.panorama__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.panorama__message {
+  padding: 18px 0;
+  padding-right: 10px;
+  padding-left: 17px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 23px 30px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 31px;
+    padding-bottom: 24px;
+    padding-left: 27px;
+  }
+}
+
+.panorama__author {
+  margin: 0;
+}
+
+.panorama__name {
+  font-weight: 700;
+}
+
+.panarama__date {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.panorama__text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.panorama__likes {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.panorama__heart {
+  width: 13px;
+  height: 12px;
+  padding: 0;
+  border: 0;
+  margin-right: 18px;
+  background: url("@img/icons/icons.svg#heart") no-repeat;
+  outline: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-right: 0;
+    margin-left: 16px;
+  }
+}
+
+.panorama__count {
+  color: $special;
+  font-size: 12px;
+  text-transform: uppercase;
+}
