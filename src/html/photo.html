@@ -47,6 +47,9 @@
             <li class="cards__item">
               <a class="cards__link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1000px)" srcset="@img/photo/cards/photo-1-desktop.webp 1x, @img/photo/cards/photo-1-desktop.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)" srcset="@img/photo/cards/photo-1-tablet.webp 1x, @img/photo/cards/photo-1-tablet.webp 2x">
+                  <source type="image/webp" srcset="@img/photo/cards/photo-1-mobile.webp 1x, @img/photo/cards/photo-1-mobile@2x.webp 2x" alt>
                   <source media="(min-width: 1000px)" srcset="@img/photo/cards/photo-1-desktop.jpg 1x, @img/photo/cards/photo-1-desktop.jpg 2x">
                   <source media="(min-width: 660px)" srcset="@img/photo/cards/photo-1-tablet.jpg 1x, @img/photo/cards/photo-1-tablet.jpg 2x">
                   <img class="cards__img" src="@img/photo/cards/photo-1-mobile.jpg" srcset="@img/photo/cards/photo-1-mobile@2x.jpg 2x" alt>
@@ -193,6 +196,8 @@
               <input class="visually-hidden" type="file" name="file">
               <div class="filter__picture">
                 <picture>
+                  <source media="(min-width: 660px)" type="image/webp" srcset="@img/photo/cards/photo-7-tablet.webp 1x, @img/photo/cards/photo-7-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="@img/photo/cards/photo-7-mobile.webp 1x, @img/photo/cards/photo-7-mobile@2x.webp 2x">
                   <source media="(min-width: 660px)" srcset="@img/photo/cards/photo-7-tablet.jpg 1x, @img/photo/cards/photo-7-tablet@2x.jpg 2x">
                   <img class="filter__img" src="@img/photo/cards/photo-7-mobile.jpg" srcset="@img/photo/cards/photo-7-mobile@2x.jpg 2x" alt>
                 </picture>
